@@ -1,0 +1,21 @@
+body{
+    margin:0;
+}
+h1{
+    margin:0;
+}
+br{
+    display:none;
+}
+span{
+    padding-right:50px;
+}
+#capacity span{
+    padding:0;
+}
+#education span{
+    padding:0;
+}
+#project span{
+    padding:0;
+}
