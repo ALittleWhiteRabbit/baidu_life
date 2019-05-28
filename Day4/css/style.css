@@ -1,0 +1,54 @@
+body{
+    background:#fae2ed;
+  }
+  #title{
+    font-size:32px;
+    background-color:#cccccc;
+    text-shadow:3px 3px black;
+    padding:5px;
+  }
+  h1,p{
+    text-align:center;
+  }
+  h1{
+    font-family:Lato,"Microsoft YaHei",sans-serif;
+    font-size:25px;
+    color:white;
+    margin-top:10px;
+  }
+  h2{
+    color:white;
+    font-size:20px;
+  }
+  h3{
+    color:#ec6b46;
+  }
+  #div1{
+    text-indent:15px;
+  }
+  .solid{
+    border-top:2px solid black;
+  }
+  .dotted{
+    border:2px dotted green;
+  }
+  #list1{
+    list-style-type:decimal;
+  }
+  #list2{
+    list-style-type:circle;
+    list-style-image:url("");
+  }
+  a:link{
+    text-decoration:none;
+    color:#FF00FF;
+  }
+  a:visited{
+    color:#00FF00;
+  }
+  a:hover{
+    color:#ec6b46;
+  }
+  a:active{
+    color:#0000FF;
+  }
