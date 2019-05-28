@@ -1,0 +1,4 @@
+1、HTML是一种标记语言、CSS实现样式、HTML5是比较新的标准、js实现效果。
+2、web service指的是协议+格式的交流体系（协议如http、数据封装格式如HTML），可以自己定义。
+3、php是一种常见的用来写服务器脚本的语言。
+4、常见架构：LAMP(Linux+Apache+MySQL+PHP)、J2EE（java、unix、Apache、Tomcat、Oracle)、MEAN(MongoDB、Angular、node.js)、ASP.NET(SQL Server)
