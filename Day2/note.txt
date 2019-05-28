@@ -1,0 +1,18 @@
+1、语义化
+发布内容时，用机器可读的、被广泛认可的语义信息描述内容，降低web内容的难度。
+2、HTML、HTML5是什么
+HTML是超文本标记语言（Hyper Text Markup Language),HTML使用标记标签来描述网页。
+HTML5是最新的HTML标准，为承载web内容而设计，跨平台。
+3、HTML元素标签、属性的概念
+HTML文档由HTML元素定义，HTML元素是指从开始标签到结束标签的所有代码。
+属性为HTML元素提供附加信息，属性总是在HTML元素的开始标签中规定。
+4、文档类型是什么概念，起什么作用
+<!DOCTYPE>声明帮助浏览器正确地显示网页，为浏览器提供一项信息即HTML是用什么版本编写的。
+5、链接是什么概念，对应什么标签
+HTML使用超级链接与网络上的另一个文档相连，从一个页面跳到另一个页面。<a href></a> <a name></a>
+6、常用的标签都有哪些，用在什么场景
+<h>标题</h> <p>段落  <br>换行  <a>超链接</a>  <img>图像
+<table><tr><td>表格</td></tr></table>  <ul><li>无序列表</li></ul>  <ol><li>有序列表</li></ol>  <dl><dt></dt><dd>自定义列表</dd></dl>  <div>块级元素</div>
+7、表单标签
+<form>:定义HTML表单  <input>:最重要的表单元素  <select>:定义下拉列表   <option>:定义待选择的选项   <textarea>:定义多行输入字段（文本域）  <button>:定义可点击的按钮  
+HTML5<datalist>:为<input>元素规定预定义选项列表
