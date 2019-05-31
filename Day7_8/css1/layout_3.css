@@ -1,0 +1,42 @@
+body{
+    margin:0;
+}
+#left{
+    background:rgb(102, 101, 165);
+    width:200px;
+}
+#middle{
+    background:rgb(127, 167, 212);
+    width:200px;
+}
+#right{
+    background:rgb(102, 38, 38);
+}
+/*
+#main{
+    width:100%;
+}
+#middle{
+    float:left;
+}
+#left{
+    float:left;
+}
+*/
+/*绝对定位法*/
+#main{
+    width:100%;
+}
+#left,#middle{
+    position:absolute;
+}
+#left{
+    left:0;
+}
+#middle{
+    left:200px;
+}
+#right{
+    margin:0 400px;
+    width:calc(100% - 400px);
+}

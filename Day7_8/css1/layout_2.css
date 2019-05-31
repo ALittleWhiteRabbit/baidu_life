@@ -1,0 +1,59 @@
+body{
+    margin:0;
+}
+#left{
+    background:rgb(102, 101, 165);
+    width:200px;
+}
+#middle{
+    background:rgb(127, 167, 212);
+}
+#right{
+    background:rgb(102, 38, 38);
+    width:200px;
+}
+/*三栏布局，左右侧固定宽度，中间自适应 
+自身浮动法 注：主体div在最后
+#main{
+    width:100%;
+}
+#left{
+    float:left;
+}
+#right{
+    float:right;
+}
+绝对定位法 注：三个div的顺序可以任意调整
+#main{
+    width:100%;
+}
+#left,#right{
+    position:absolute;
+}
+#left{
+    left:0;
+}
+#middle{
+    margin:0 210px;
+}
+#right{
+    right:0;
+}
+margin负值法 注：中间的主体要使用双层标签 且先是主体div
+#main{
+    width:100%;
+    float:left;
+}
+#main #middle{
+    margin:0 210px;
+}
+#left,#right{
+    float:left;
+}
+#left{
+    margin-left:-100%; 前面div宽度为100%
+}
+#right{
+    margin-right:-200px;
+}
+*/

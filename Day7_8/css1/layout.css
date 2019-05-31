@@ -1,0 +1,61 @@
+body{
+    margin:0;
+}
+/*两栏布局，左侧30%宽度，右侧70%宽度
+#main{
+    width:100%;
+    overflow:hidden;
+}
+#left{
+    background:rgb(102, 101, 165);
+    float:left;
+    width:30%;
+}
+#right{
+    background:rgb(102, 38, 38);
+    float:right;
+    width:70%;
+}*/
+/* 两栏布局，左侧固定，右侧自适应  float方案
+#main{
+    width:100%;
+    overflow:hidden;
+}
+#left{
+    background:rgb(102, 101, 165);
+    float:left;
+    width:200px;
+}
+#right{
+    background:rgb(102, 38, 38);
+}
+
+两栏布局，左侧固定，右侧自适应 flex方案*/
+#main{
+    width:100%;
+    display:flex;
+}
+#left,#right{
+    background:rgb(102, 101, 165);
+    flex: 0 0 auto;
+}
+#right{
+    background:rgb(102, 38, 38);
+    flex:1 1 auto;
+}
+/*两栏布局，右侧固定，左侧自适应
+body{
+    margin:0;
+}
+#main{
+    width:100%;
+    overflow:hidden;
+}
+#left{
+    background:rgb(102, 101, 165);
+}
+#right{
+    background:rgb(102, 38, 38);
+    float:right;
+    width:200px;
+}*/
