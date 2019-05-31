@@ -50,12 +50,13 @@ ul li{
 nav{
     width:100%;
     border-bottom: 1px solid rgb(211, 212, 211);
-    margin:0 auto;
+    font-size:0; /*使span之间的距离消失*/
 }
 .menu{
     margin-left:120px;
 }
 .menu span{
+    font-size: initial; /*使span之间的距离消失*/
     display: inline-block;
     background:rgb(220, 226, 219);
     width:90px;
@@ -63,10 +64,11 @@ nav{
     text-align: center;
     padding-top:12px;
     margin-top:20px;
+    margin-bottom:-1px; /*处理底部的border*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border:1px solid rgb(211, 212, 211);
-    border-bottom-color: #fff;
+    border-bottom: #fff;
 }
 .menu .choosed{
     background:#fff;
