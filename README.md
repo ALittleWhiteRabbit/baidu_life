@@ -16,3 +16,6 @@
 ## Day5、6: 三种简历（同一HTML，不同CSS）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day5_6)
 * [预览](https://cyxsf.github.io/baidu_life/Day5_6/resume.html)
+## Day7、8: 学习布局(布局练习和设计稿）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day7_8)
+* [预览](https://cyxsf.github.io/baidu_life/Day7_8/design.html)
