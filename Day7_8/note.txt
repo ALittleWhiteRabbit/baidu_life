@@ -1,0 +1,22 @@
+1、默认情况下，块级元素的内容宽度是其父元素的宽度的100%；内联元素高度与内容的高度一样，不能对内联元素设置宽度或高度。
+2、绝对定位的元素会脱离文档流 position:absolute
+3、一个固定定位元素不会保留它原本在页面应有的空隙（脱离文档流） position:fixed
+4、z-index:影响定位元素在z轴上的位置，正值移动到堆栈上方。
+5、display:none不会占据本来应该显示的空间，但是visibility:hidden会占据空间。
+6、box-sizing:border-box时，元素的内边距和边框都不会再增加它的宽度。
+7、流体特性：块状水平元素，在默认情况下，水平方向会自动填满外部的容器，随着margin,padding,border的出现，形成了自适应效果。
+8、BFC（Block Formatting Context):内部元素不会影响外部元素
+9、触发BFC的条件
+• float的值不为none。
+• overflow的值为auto,scroll或hidden。
+• display的值为table-cell, table-caption, inline-block中的任何一个。
+• position的值不为relative和static。
+10、BFC的优势
+• 自适应内容由于封闭，更健壮，容错性强
+• 自适应内容自动填满浮动以为区域，无需关心浮动元素宽度，可以整站大规模应用
+11、圣杯布局
+写结构时注意，父元素的三栏务必先写中间盒子（需要优先渲染）
+• 让左边盒子上去,设置其左边距为负的中间盒子宽度，即 .left{margin-left:-100%}
+• 让右边盒子上去，设置其左边距为负的自己的宽度，即 .right{margin-right:-200px}
+12、双飞翼布局
+在圣杯布局的基础上，给中间的盒子增加一层包裹
