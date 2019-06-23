@@ -19,7 +19,7 @@
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day7_8)
 * [预览](https://cyxsf.github.io/baidu_life/Day7_8/design.html)
 ## Day9~11: 做一个漂亮的网站(将设计稿转化为网页）
-* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day9_11) 时间原因，未进行重构代码，优化代码结构及细节。
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day9_11) 已重构代码
 * [预览](https://cyxsf.github.io/baidu_life/Day9_11/design.html)
 * [笔记](https://github.com/cyxsf/baidu_life/blob/master/Day9_11/note.txt)
 ## 暂停一段时间，期末考试后继续。
