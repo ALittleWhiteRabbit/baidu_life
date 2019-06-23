@@ -1,357 +1,362 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat';
 }
-.upper{
+.upper {
     text-transform: uppercase;
 }
-.header{
-    width:100%;
-    height:1000px;
+/*头部及注册*/
+.header {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    color: #fff;
     background-image: url('../images/bg1.png');
-    text-align:center;
-    color:#fff;
     background-repeat: no-repeat;
 }
-.header h1{
+.header h1 {
     position: relative;
-    top:200px;
-    font-size:62px;
+    top: 200px;
+    font-size: 62px;
 }
 .header>p {
-    display:block;
+    display: block;
     position: relative;
-    width:750px;
-    height:150px;
-    font-size:20px;
-    margin:auto;  /*水平居中*/
-    margin-top:350px;
+    margin: 350px auto 0;  /*水平居中*/
+    width: 750px;
+    height: 150px;
+    font-size: 20px;
 }
-.register{
-    display:block;
-    width:970px;
-    height:250px;
-    margin:auto;
-    border:1px solid rgb(85,83,81);
-    margin-top:100px;
+.register {
+    display: block;
+    margin: 100px auto 0;
+    width: 970px;
+    height: 250px;
+    border: 1px solid rgb(85,83,81);
 }
-.register h2{
-    font-size:16px;
-    margin-top:60px;
+.register h2 {
+    margin-top: 60px;
+    font-size: 16px;
 }
-.register h3{
-    font-size:12px;
+.register h3 {
+    margin-top: 20px;
+    font-size: 12px;
     opacity: 0.3;
-    margin-top:20px;
 }
-.register form{
+.register form {
     margin-top:50px;
 }
-.register input{
+.register input {
     margin-right:30px;
+    padding-left:20px;
+    border:1px solid rgb(80,80,80);
     height:50px;
     width:300px;
-    background:rgb(85,83,81,0);
-    border:1px solid rgb(80,80,80);
-    color:#fff;
-    padding-left:20px;
     font-size:14px;
+    color:#fff;
+    background:rgb(85,83,81,0);
 }
-.register label{
+.register label {
     display: inline-block;
     width:125px;
     height:50px;
-    background:#fff;
-    color:#000;
     font-size:12px;
     line-height:55px;
+    color:#000;
+    background:#fff;
 }
-.content_top>p{
-    margin-top:50px;
+/*特征介绍*/
+.features>p {
+    margin-top: 50px;
     text-align: center;
-    font-size:14px;
+    font-size: 14px;
 }
-.ttitle{
-    width:670px;
-    height:90px;
-    font-size:42px;
-    margin:auto;
-    text-align:center;
-    margin-top:40px;
-}
-.content_top .first{
-    display:flex;
-    flex-wrap:wrap;
-    margin-bottom:110px;
-}
-.content_top .box{
-    display:inline-block;
-    width:425px;
-    height:100px;
-    margin-top:85px;
-    margin-left:100px;
-    padding-right:100px;
-}
-.content_top .first img{
-    float:left;
-    margin-right:30px;
-}
-.content_top .first h2{
-    font-size:20px;
-}
-.content_top .first span{
-    display:block;
-    float:right;
-    font-size:16px;
-    margin-top:20px;
-    width:360px;
-}
-.content_top .last{
-    /*width:100%;*/
-    height:800px;
-    background-image:url('../images/bg2.png');
-    background-repeat:no-repeat;
-    color:#fff;
-    padding-left:300px;
-}
-.content_top .last h1{
-    font-size:42px;
-    padding-top:185px;
-    width:370px;
-}
-.content_top .last div{
-    margin-top:50px;
-    font-size:18px;
-    width:370px;
-}
-.content_top .last button{
-    margin-top:55px;
-    width:240px;
-    height:60px;
-    border:1px solid rgb(80,80,80);
-}
-.content_top .last button[name="try"]{
-    background:rgb(80,80,80,0);
-    color:#fff;
-    margin-left:30px;
-}
-.content_middle .first{
-    text-align:center;
-}
-.content_middle h1{
-    font-size:42px;
-    margin-top:100px;
+.ftitle {
+    display: block;
+    margin: 40px auto 85px;
+    width: 670px;
+    height: 90px;
+    font-size: 42px;
     text-align: center;
 }
-.content_middle .first{
+.features .finfo {
     display: flex;
-    margin:90px auto;
-    border-bottom:1px solid rgb(231,231,231);
+    flex-wrap: wrap;
+    margin:100px 0 110px 100px;
 }
-.content_middle .box{
+.features .box1,
+.features .box2,
+.features .box3,
+.features .box4 {
+    width: 425px;
+    height: 100px;
+}
+.features .box1,
+.features .box2 {
+    margin-bottom: 80px;
+}
+.features .box2,
+.features .box4 {
+    margin-left: 195px;
+}
+.features img {
+    float: left;
+    margin-right: 30px;
+}
+.features h3 {
+    margin: 0 0 30px 75px;
+    font-size: 20px;
+}
+.finfo span {
+    display: block;
+    margin-left: 75px;
+    width: 360px;
+    font-size: 16px;
+    line-height: 30px;
+}
+/*资料和支持*/
+.support {
+    width: 100%;
+    height: 800px;
+    padding-left: 300px;
+    color: #fff;
+    background-image: url('../images/bg2.png');
+    background-repeat: no-repeat;
+}
+.support h1 {
+    padding-top: 185px;
+    width: 370px;
+    font-size: 42px;
+}
+.support div {
+    margin-top: 50px;
+    width: 370px;
+    font-size: 18px;
+}
+.support button {
+    margin-top: 55px;
+    width: 240px;
+    height: 60px;
+    border: 1px solid rgb(80,80,80);
+}
+.support .try {
+    margin-left: 30px;
+    color: #fff;
+    background: rgb(80,80,80,0);
+}
+/*介绍*/
+.try h1 {
+    margin-top: 100px;
+    font-size: 42px;
+    text-align: center;
+}
+.try .tinfo {
+    display: flex;
+    margin-top:90px;
+    border-bottom: 1px solid rgb(231,231,231);
+    text-align: center;
+}
+.try .box {
     max-width: 265px;
-    margin:auto;
-    padding-bottom:80px;
+    margin: auto;
+    padding-bottom: 80px;
 }
-.content_middle .first img{
+.try .tinfo img{
     display:block;
     margin:auto;
     margin-bottom:45px;
 }
-.content_middle .first span{
+.try .info span{
     font-size:16px;
 }
-.content_middle .last{
+/*含图片的介绍*/
+.introduce {
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgb(231,231,231);
+}
+.introduce img {
+    width: 575px;
+    height: 355px;
+}
+.introduce h2 {
+    font-size: 20px;
+}
+.introduce span{
+    display: block;
+    margin-top:30px;
+    font-size: 16px;
+}
+.introduce .box1 {
+    display: flex;
+    margin-top: 115px;
+}
+.introduce .box1 img {
+    margin-left: 80px;
+}
+.introduce .box1_info {
+    width: 310px;
+    margin: 75px 0 0 100px;
+}
+.introduce .box2 {
+    display: flex;
+    margin-top: 80px;
+}
+.introduce .box2_info {
+    width: 330px;
+    margin: 65px 100px 0 80px;
+}
+/*导师介绍*/
+.crew {
     border-bottom:1px solid rgb(231,231,231);
 }
-.content_middle .last img{
-    width:575px;
-    height:355px;
+.crew h1 {
+    margin-top: 100px;
+    font-size: 42px;
+    text-align: center;
 }
-.content_middle .last h2{
-    font-size:20px;
-    margin-top:75px;
+.crew span {
+    display: block;
+    margin: 40px auto 0;
+    width: 710px;
+    text-align: center;
+    font-size: 18px;
 }
-.content_middle .last span{
-    display: inline-block;
-    font-size:16px;
-    margin-top:40px;
-    width:310px;
-}
-
-.content_middle .last .box1{
-    margin-top: 115px;
-    margin-bottom:80px;
-    display:flex;
-}
-
-.content_middle .last .box1 img{
-    margin-left:80px;
-}
-.content_middle .last .box1_info{
-    width:310px;
-    display: inline-block;
-    margin-left:100px;
-}
-
-.content_middle .last .box2{
-    margin-top: 115px;
-    margin-bottom:80px;
-    display:flex;
-}
-.content_middle .last .box2_info{
-    width:330px;
-    display: inline-block;
-    margin-right:100px;
-    margin-left:80px;
-}
-.content_bottom .first{
-    border-bottom:1px solid rgb(231,231,231);
-}
-.content_bottom .first h1{
-    font-size:42px;
-    text-align:center;
-    margin-top:100px;
-    margin-bottom:40px;
-}
-.content_bottom .first div{
-    font-size:18px;
-    margin:auto;
-    width:710px;
-    text-align:center;
-}
-.content_bottom .first .box{
-    display:flex;
+.crew .box {
+    display: flex;
     flex-wrap: wrap;
-    width:970px;
-    height:710px;
-    margin:65px 100px 100px;
+    width: 970px;
+    height: 710px;
+    margin: 65px 100px 100px;
 }
-.content_bottom .first .main h1{
-    margin-top:110px;
-    text-align:center;
-    font-size:20px;
-    color:#fff;
+.crew .main h4 {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
 }
-.content_bottom .first .main h2{
-    font-size:12px;
-    margin-top:20px;
-    text-align:center;
-    color:#fff;
+.crew .main p {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
 }
-.content_bottom .first .main img{
-    width:58px;
-    height:58px;
-    margin-right:30px;
-    margin-top:35px;
+
+.crew .main img {
+    width: 58px;
+    height: 58px;
+    margin: 35px 20px;
 }
-.content_bottom .first .team {
+.crew .team {
     position: relative;
     overflow: hidden;
     margin: 0 15px 30px 0;
     width: 470px;
     height: 340px;
 }
-.content_bottom .first .team:hover .main{
-    display: inline;
+.crew .team:hover .main {
+    display: block;
     cursor: pointer;
+    text-align: center;
 }
-.content_bottom .first .main{
+.crew .main {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0, 0.6);
     width: 470px;
     height: 340px;
+    background: rgba(0,0,0, 0.6);
 }
-.content_bottom .first .main a{
+.crew .main a {
     text-decoration: none;
 }
-.content_bottom .last{
+/*联系*/
+.contact {
     display: flex;
-    margin-top:70px;
+    margin-top: 70px;
 }
-.content_bottom .last .left{
-    display: inline-block;
-    width:470px;
-    height:560px;
-    border:1px solid rgb(231,231,231);
+.write {
+    width: 470px;
+    height: 560px;
+    border: 1px solid rgb(231,231,231);
     border-radius: 10px;
-    margin-left:100px;
-    margin-right:135px;
+    margin: 0 135px 0 100px;
 }
-.content_bottom .last .left p{
-    margin:50px;
-    text-align:center;
-    font-size:16px;
+.write p {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    font-size: 16px;
 }
-.content_bottom .last .left input,[name="message"]{
-    display:block;
-    width:370px;
-    height:50px;
-    margin:auto;
-    margin-bottom:30px;
-    padding-left:20px;
-    box-sizing:border-box;
+.write input[name="email"],
+input[name="subject"],
+textarea {
+    display: block;
+    width: 370px;
+    height: 50px;
+    margin: 0 auto 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
-.content_bottom .last .left [name="message"]{
-    height:145px;
-    padding-top:20px;
+.write textarea {
+    height: 145px;
+    padding-top: 20px;
 }
-.content_bottom .last .left [name="sub"]{
-    background:rgb(20,20,20);
-    color:#fff;
-    border:none;
+.write input[name="sub"] {
+    display: block;
+    width: 370px;
+    height: 50px;
+    border: none;
+    margin: 0 auto;
+    background: rgb(20,20,20);
+    color: #fff;
 }
-.content_bottom .last .right h1{
-    font-size:42px;
-    margin-bottom:40px;
-    margin-top:85px;
+.contacts h2 {
+    margin: 85px 0 40px 0;
+    font-size: 42px;
 }
-.content_bottom .last .right>div{
-    width:355px;
-    font-size:16px;
-    line-height:25px;
+.contacts span {
+    display: block;
+    width: 355px;
+    font-size: 16px;
+    line-height: 25px;
 }
-.content_bottom .last .right .box{
-    width:270px;
-    font-size:16px;
-    margin-bottom:35px;
+.contacts .info {
+    margin-top: 75px;
 }
-.content_bottom .last .right .box1{
-    margin-top:75px;
+.contacts .box {
+    width: 270px;
+    font-size: 16px;
+    margin-bottom: 35px;
 }
-.content_bottom .last .right img{
+.contacts img {
     float:left;
     margin-right:20px;
 }
-.footer{
-    width:100%;
-    height:410px;
-    background:rgb(20,20,20);
-    color:#fff;
+/*尾部*/
+.footer {
     display: flex;
-    margin-top:70px;
-    margin-bottom:0;
+    width: 100%;
+    height: 410px;
+    margin-top: 70px;
+    background: rgb(20,20,20);
+    color: #fff;
 }
-.footer ul{
-    margin-right:130px;
-    margin-top:85px;
+.footer ul {
+    margin: 85px 130px 0 0;
     max-width: 270px;
 }
-.footer ul li{
+.footer li {
+    margin-bottom: 35px;
     list-style-type: none;
-    margin-bottom:35px;
 }
-.footer ul li a{
+.footer a {
     text-decoration: none;
-    color:#fff;
-    opacity: 0.3;
+    color: #fff;
+    opacity:  0.3;
 }
-.footer .first{
-    margin-left:100px;
+.footer .first {
+    margin-left: 100px;
 }
 
 
