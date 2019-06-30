@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    font-size:14px;
+}
+/*菜单*/
+.menu {
+    display: flex;
+    width: 350px;
+    height: 100%;
+}
+/*左菜单*/
+.iconitems {
+    width: 100px;
+    height: auto;
+    background-color: rgb(29,37,49);
+}
+.iconitems .topitem {
+    cursor: pointer; 
+    text-align: center;
+}
+.iconitems .iconteam {
+    margin-top: 20px;
+}
+.iconitems .highlight{
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 20px;
+    margin-top: 20px;
+    background: url(../images/highlight.png) no-repeat;
+}
+.iconteam:hover .highlight{
+    display:block;
+}
+.iconitems .bottomitem {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.iconitems .bottomitem>img:first-child {
+    margin-right:20px;
+}
+/*主菜单*/
+.mainmenu {
+    width: 250px;
+    height: auto;
+    overflow: auto;
+    background-color: rgb(34,44,60);
+}
+.mainmenu::-webkit-scrollbar {
+    display:none;
+}
+.mainmenu ul li{
+    list-style: none;
+    margin: 25px 20px;
+    color:#fff;
+}
+.mainmenu .tmenu ul>li:first-child,
+.mainmenu .mmenu ul>li:first-child,
+.mainmenu .bmenu ul>li:first-child {
+    margin-top: 30px ;
+    font-size: 12px;
+    opacity: 0.3;
+}
+.mainmenu .set {
+    float:right;
+}
+.mainmenu .tmenu ul, 
+.mainmenu .mmenu ul {
+    border-bottom: 1px solid rgb(42,53,71);
+}
+.tmenu .notification {
+    float: right;
+    width: 32px;
+    height: 24px;
+    background: url(../images/notification.png);
+}
+.bmenu .notification_2 {
+    float: right;
+    width: 32px;
+    height: 24px;
+    background: url(../images/notification_2.png);
+}
+.bmenu .alert {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background: url(../images/alert.png);
+}
+/*移动时高光显示*/
+.mainmenu .liteam {
+    cursor: pointer;
+}
+.mainmenu .highlight {
+    position: absolute;
+    left: 100px;
+    width: 10px;
+    height: 20px;
+    display: none;
+    background: url(../images/highlight.png) no-repeat;
+}
+.mainmenu .liteam:hover .highlight {
+    display: block;
+}
+.mainmenu .bottom span {
+    position: absolute;
+    left: 120px;
+    bottom: 35px;
+    color:#fff;
+}
+.mainmenu .bottom img {
+    position: absolute;
+    left: 120px;
+    bottom: 20px;
+}
+/*主体*/
+.main {
+    display:flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: column;
+}
+.message {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/*顶部*/
+.top_nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230,233,236);
+}
+ .top_nav h1{
+    font-size: 24px;
+    margin: 20px;
+}
+.identity {
+    display: flex;
+    margin-top: 15px;
+}
+.identity .photo {
+    width: 50px;
+    height: 50px;
+    background: url(../images/photo.png) no-repeat;
+}
+.identity .iname {
+    margin-left: 15px;
+}
+.identity .dropdown {
+    width: 11px;
+    height: 7px;
+    margin: 15px 30px auto 35px;
+    background: url(../images/dropdown.png) no-repeat;
+}
+.iname p:first-child {
+    font-size: 16px;
+    color: rgb(35,153,244);
+}
+.iname p:last-child {
+    color: rgb(181,181,181);
+}
+/*搜索*/
+.message .menu_content {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    flex-flow: column;
+}
+.menu_content .search input[type="search"] {
+    margin: 20px 30px;
+    padding-left: 15px;
+    height: 35px;
+    width: 335px;
+    background: url(../images/search.png) no-repeat 310px;
+    border: 1px solid rgb(229,232,238);
+}
+.menu_content .search {
+    height: 70px;
+    border-right: 1px solid rgb(230,233,236);
+    border-bottom: 1px solid rgb(230,233,236);
+}
+/* 在盒子上添加样式，把滚动条隐藏，这种CSS3方法目前不兼容火狐和IE浏览器 
+    第二种方法是在外面再套一层DIV宽度比内容小一点overflow：hidden 通过隐藏内容隐藏滚动条
+*/
+.menu_content .useritem {
+    overflow: auto;
+}
+.useritem::-webkit-scrollbar {
+    display:none;
+}
+/*人物列表*/
+.useritem .items {
+    display: flex;
+    flex-flow: column;
+    height: 130px;
+    padding: 15px 30px;
+    border-right: 1px solid rgb(229,232,238);
+    border-bottom: 1px solid rgb(229,232,238);
+}
+.items .highlight2 {
+    display: flex;
+    position: absolute;
+    top: 140px;
+    left: 350px;
+}
+.highlight2 .highlight2-info {
+    height: 130px;
+    width: 3px;
+    background: url(../images/highlight2.png) no-repeat;
+}
+.user .user-photo {
+    cursor: pointer;
+}
+.items .user {
+    position: relative;
+    display: flex;
+    height: 46px;
+    margin-bottom: 15px;
+}
+.user .user-photo {
+    display: flex;
+    align-items: center;
+}
+.user-photo .userphoto {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.info .name-head {
+    display: flex;
+    align-items: center; /*使status和用户名在一条线上*/
+    margin-bottom: 5px;
+}
+.name-head .status2 {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: rgb(0,170,255);
+}
+.name-head .username {
+    font-size: 16px;
+}
+.info .contact {
+    color: rgb(211,211,211);
+}
+.user .date {
+    position: absolute;
+    right: 0;
+    color: rgb(127,143,164);
+}
+.items .mes {
+    display:flex;
+    width: 400px;
+}
+.mes .item_info {
+    display: flex;
+    width: 320px;
+    height: 40px;
+    overflow: hidden;
+    color: rgb(88,93,104);
+}
+.mes .notification_3 {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    background: url(../images/notification_3.png) no-repeat;
+}
+.item1 .userphoto {
+    background: url(../images/Bessie.png) no-repeat;
+}
+.item1 .username {
+    color: rgb(0,170,255);
+}
+.item2 .userphoto {
+    background: url(../images/Victor.png) no-repeat;
+}
+.item3 .userphoto {
+    background: url(../images/Dustin.png) no-repeat;
+}
+.item4 .userphoto {
+    background: url(../images/Jack.png) no-repeat;
+}
+.item5 .userphoto {
+    background: url(../images/Stephen.png) no-repeat;
+}
+.item6 .userphoto {
+    background: url(../images/Sally.png) no-repeat;
+}
+.item7 .userphoto {
+    background: url(../images/Robert.png) no-repeat;
+}
+/*功能栏*/
+.main_content {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.main_content .function {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid rgb(230,233,236);
+}
+.function .fun-info {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.fun-info p:first-child {
+    font-size: 18px;
+}
+.fun-info .status {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: rgb(27,185,52);
+}
+.function .fun-right {
+    display: flex;
+}
+.fun-right .tools,
+.fun-right .flip  {
+    background: rgb(249,250,251);
+    border: 1px solid rgb(206,208,218);
+    border-radius: 6px;
+}
+.tools .btn,
+.flip .btn {
+    width: 35px;
+    height: 30px;
+}
+.function .tools {
+    display: flex;
+    width: 110px;
+    height: 30px;
+    margin: auto 25px;
+}
+.tools .user {
+    background: url(../images/user.png) no-repeat center;
+    border-right: 1px solid rgb(206,208,218);
+}
+.tools .upload {
+    background: url(../images/upload.png) no-repeat center;
+    border-right: 1px solid rgb(206,208,218);
+}
+.tools .transh {
+    background: url(../images/trash.png) no-repeat center;
+}
+.fun-right p:nth-child(2) {
+    margin: auto;
+    padding-left:25px;
+    border-left: 1px solid rgb(230,233,236);
+    font-weight: bold;
+    color: rgb(86,104,138);
+} 
+.fun-right .flip {
+    display: flex;
+    width: 75px;
+    height: 30px;
+    margin: auto 20px auto 15px;
+} 
+.flip .left {
+    background: url(../images/arrow_left.png) no-repeat center;
+    border-right: 1px solid rgb(206,208,218);
+}
+.flip .right {
+    background: url(../images/arrow_right.png) no-repeat center;
+}
+/*主体消息*/
+.main_content .maininfo {
+    overflow: auto;
+}
+.maininfo::-webkit-scrollbar {
+    display:none;
+}
+.maininfo .mainitem {
+    margin-top: 20px;
+}
+.mainitem .info-photo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+.mainitem .main-info {
+    margin-left: 100px;
+}
+.name-info .user-name {
+    margin: 25px 10px auto auto;
+    font-size: 16px;
+}
+.name-info .clock {
+    color: rgb(127,143,164);
+}
+.main-info .mes-info {
+    display: block;
+    margin:15px 65px auto auto;
+}
+.mainitem .photo1 {
+    background: url(../images/Bessie.png) no-repeat;
+}
+.mainitem .photo2 {
+    background: url(../images/Jordan.png) no-repeat;
+}
+/*两个图片*/
+.maininfo .img-box {
+    display: flex;
+    margin: 20px auto 30px 100px;
+}
+.img-box .icon {
+    position: absolute;
+    width: 156px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color:  rgb(0,0,0, 0.6);
+}
+.icon img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-box .team:hover .icon {
+   cursor: pointer;
+   display: block;
+}
+.img-box .team1{
+    position: relative;
+    margin-right: 15px;
+}
+.img-box .team2{
+    position: relative;
+}
+/*下面的输入框*/
+.maininfo .input {
+    display: flex;
+    height: 55px;
+    width: auto;
+    margin: 30px;
+}
+.input .add2 {
+    width: 55px;
+    height: 100%;
+    border: 1px solid rgb(206,208,218);
+    border-right-style: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(249,250,251);
+}
+.input .add2 img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input input {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid rgb(206,208,218);
+}
+/*中间的分割线*/
+.time-line {
+    position: relative;
+    text-align: center;
+}
+.time-line span:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: rgb(217,221,227);
+}
+.time-line span:nth-child(2) {
+    position: absolute;
+    top: 4px;
+    width: 90px;
+    color: rgb(206,208,218);
+    background: rgb(255,255,255);
+}
+.blue span:nth-child(1) {
+    background: rgb(167,214,249);
+}
+.blue span:nth-child(2) {
+    width: 130px;
+    color: rgb(167,214,249);
+}
