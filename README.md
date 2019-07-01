@@ -21,8 +21,9 @@
 ## Day9~11: 做一个漂亮的网站(将设计稿转化为网页）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day9_11) 
 * [预览](https://cyxsf.github.io/baidu_life/Day9_11/design.html)
-* [笔记](https://github.com/cyxsf/baidu_life/blob/master/Day9_11/note.txt)
 ## Day12~15: 复杂页面实现(将设计稿转化为网页）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day12_15)
 * [预览](https://cyxsf.github.io/baidu_life/Day12_15/design.html)
-* [笔记](https://github.com/cyxsf/baidu_life/blob/master/Day12_15/note)
+## Day16：初识JavaScript
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day16)
+* [预览](https://cyxsf.github.io/baidu_life/Day16/index2.html)
