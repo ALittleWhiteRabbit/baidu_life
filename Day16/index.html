@@ -1,0 +1,79 @@
+<!--初识JavaScript
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <p id="content-wrapper">Hello World</p>
+    <script>
+        console.log(document.getElementById("content-wrapper").innerHTML);
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <p id="content-wrapper">你是谁？</p>
+    <input id="name-input" type="text" placeholder="输入你的名字">
+    <button id="send-btn">发送</button>
+    <script>        
+        document.getElementById("send-btn").onclick = function() {
+            document.getElementById("content-wrapper").innerHTML = 'Hello ' + document.getElementById("name-input").value;
+        }
+    </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var add = document.getElementById("add-btn");
+        add.onclick = function() {
+            var number1 = document.getElementById("first-number").value;
+            var number2 = document.getElementById("second-number").value;
+            var result = Number(number1)+Number(number2);
+            document.getElementById("result").innerHTML= "加法计算结果为:"+result;
+        }
+        var minus = document.getElementById("minus-btn");
+        minus.onclick = function() {
+            var number1 = document.getElementById("first-number").value;
+            var number2 = document.getElementById("second-number").value;
+            var result = Number(number1)-Number(number2);
+            document.getElementById("result").innerHTML= "减法计算结果为:"+result;
+        }
+        var times = document.getElementById("times-btn");
+        times.onclick = function() {
+            var number1 = document.getElementById("first-number").value;
+            var number2 = document.getElementById("second-number").value;
+            var result = Number(number1)*Number(number2);
+            document.getElementById("result").innerHTML= "乘法计算结果为:"+result;
+        }
+        var divide = document.getElementById("divide-btn");
+        divide.onclick = function() {
+            var number1 = document.getElementById("first-number").value;
+            var number2 = document.getElementById("second-number").value;
+            var result = Number(number1)/Number(number2);
+            document.getElementById("result").innerHTML= "除法计算结果为:"+result;
+        }
+    </script>
+</body>
+</html>

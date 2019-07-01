@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charest="utf-8">
+        <title>简历</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1 id="title">简历</h1>
+        <h1>张三</h1>
+        <p>18600000000|joinefe@baidu.com|浙江省杭州市</p>
+        <p>2020本科毕业生|求职意向：前端开发实习生</p>
+        <h2>个人总结</h2>
+        <div class="solid">
+            <ul>
+                <li>是个前端的超级菜鸟，但在努力变得不那么菜。</li>
+                <li>这个界面是真的丑。</li>
+            </ul>
+        </div>
+        <h2>教育经历</h2>
+        <div class="solid">
+            <h3>百度前端学院</h3>
+            <ul>
+                <li>相关课程：网页设计、软件开发工具、面向对象程序设计</li>
+            </ul> 
+            <h2>项目经历</h2>
+            <div class="solid">
+                <h3>页面设计和制作</h3>
+                <ul>
+                    <li>制作了超级复杂的页面
+                    </li>
+                </ul>
+            </div>
+            <h2>在校经历</h2>
+            <div class="solid">
+                <ul>
+                    <li>
+                        <a href="https://github.com/cyxsf/baidu_life" target="_blank">我的GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="open">更多了解</button>
+            <p id="hobby"></p>
+        <script>
+            const open = document.getElementById("open");
+            open.onclick = function(){
+                var hobby = document.getElementById("hobby");
+                hobby.innerHTML="就不告诉你，略略略!!!";
+            }
+        </script>   
+    </body>
+</html>
