@@ -1,0 +1,22 @@
+1、switch语句：计算一次switch表达式、把表达式的值与每个case的值进行对比、存在匹配则执行关联代码。
+2、break会跳出switch代码块；default规定不存在case匹配时所运行的代码、如果default不是switch代码块中最后一个case，记得用break结束默认case；switch case使用严格比较即值必须与要匹配的类型相同。
+3、break语句会终端循环，并执行循环之后的代码；continue语句跳过循环中的一个迭代，继续循环中的下一个迭代。
+4、while循环会一直循环代码块，只要指定的条件为true。Do while 是while循环的变体，在检查条件是否为真之前，这种循环会执行一次代码块。
+5、五种可包含值的数据类型：string、number、boolean、object、function
+三种对象类型：Object对象、Date日期、Array数组   
+两种不能包含值的数据类型：null、undefined
+6、constructor属性返回所有JavaScript变量的构造器函数
+7、AND&:如果数位均为1则返回1  OR|：其中一位是1，则返回1  
+XOR ^：数位是不同的则返回1   NOT~:反转所有位
+<< :通过从右推入零向左位移，并使最左边的位脱落
+>>:通过从左推入最左位的拷贝来向右位移，使最右边的位脱落
+8、var patt=/w3school/i   w3school是模式，i是修饰符（大小写不敏感）
+g:执行全局匹配（查找所有匹配） m:执行多行匹配  \s:查找空白字符  \b:匹配单词边界
+Test:结果返回true或false  exec:返回已找到的文本或null
+9、try:测试错误  catch:处理错误  throw:创建自定义错误  finally：执行代码
+10、变量是用来存储数值的、变量名大小写敏感，不以下划线、数字开头
+11、搜索最后一个字符：browserType[browserType.length-1];
+Indexof():在字符串中查找字符串并提取它   slice():提取子字符串
+12、创建一个字符串，字符串.split()变为数组，数组.join()变为字符串
+13、三元运算符：( condition ) ? run this code : run this code instead
+14、函数名后面的括号叫做“函数调用运算符”，只有在想直接调用函数的地方才写
