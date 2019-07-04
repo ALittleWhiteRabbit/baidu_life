@@ -26,3 +26,7 @@
 ## Day16：初识JavaScript
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day16)
 * [预览](https://cyxsf.github.io/baidu_life/Day16/index2.html)
+## Day17~18：如果可以重来（条件和循环）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day17_18)
+* [预览](https://cyxsf.github.io/baidu_life/Day17_18/index.html)
+
