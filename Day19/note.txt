@@ -1,0 +1,23 @@
+1、DOM是一项W3C标准，
+定义了访问文档的标准：它允许程序和脚本动态地访问、更新文档的内容、结构和样式，
+分为三个部分：CoreDom-所有文档、XML DOM-xml文档、HTML DOM-html文档
+HTML DOM是HTML的标准对象模型和编程接口，
+DOM方法是执行的动作、DOM属性是设置或改变的HTML元素的值
+2、document.write(text):写入HTML输出流，
+不要在文档加载后使用document.write(),会覆盖文档
+3、需要查找匹配指定 CSS 选择器（id、类名、类型、属性、属性值等等）的所有 HTML 元素，请使用 querySelectorAll() 不适用ie8及其更早版本
+4、改变属性的值：document.getElementById(id).attribute = new value
+eg: document.getElementById("").src="";
+改变HTML样式：document.getElementById(id).style.property = new style
+eg:Document.getElementById("").style.color="";
+5、onload 事件可用于检测访问者的浏览器类型和浏览器版本，然后基于该信息加载网页的恰当版本。
+6、onmouseover 和 onmouseout 事件可用于当用户将鼠标移至 HTML 元素上或移出时触发某个函数
+首先当鼠标按钮被点击时，onmousedown 事件被触发；然后当鼠标按钮被释放时，onmouseup 事件被触发；最后，当鼠标点击完成后，onclick 事件被触发。
+7、addEventListener() 方法为指定元素指定事件处理程序，但不会覆盖已有的，允许向相同元素添加多个事件
+8、冒泡和捕获：冒泡中最内侧元素的事件会首先被处理，然后是更外侧；捕获相反
+默认值是 false，将使用冒泡传播，如果该值设置为 true，则事件使用捕获传播
+9、nodeName属性规定节点的名称，nodeValue属性规定节点的值
+10、如需向 HTML DOM 添加新元素，您必须首先创建这个元素（元素节点），然后将其追加到已有元素
+11、HTMLCollection可以遍历列表并通过数字引用元素，但是不能使用数组方法是HTML元素的集合，可以通过名称、id或索引号  tagName、className(新浏览器)
+NodeList是文档节点的集合,只能通过索引号访问项目   querySelect
+12、window是载入浏览器的标签，navigator表示浏览器存在于web上的状态和标识，document是载入窗口的实际页面
