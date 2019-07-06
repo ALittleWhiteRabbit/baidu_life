@@ -30,6 +30,9 @@
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day17_18)
 * [预览](https://cyxsf.github.io/baidu_life/Day17_18/index.html)
 ## Day19：找到那个DOM（dom）
-* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day9)
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day19)
 * [预览](https://cyxsf.github.io/baidu_life/Day19/index.html)
+## Day20~21：和页面对话（事件和dom）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day20_21)
+* [预览](https://cyxsf.github.io/baidu_life/Day20_21/index.html)
 
