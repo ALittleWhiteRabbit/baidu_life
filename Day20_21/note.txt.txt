@@ -1,0 +1,43 @@
+1、function bgChange(e) { e.target} 函数中包括一个事件对象e，e.target指的是按钮本身。
+2、在现代浏览器中，默认情况下，所有事件处理程序都在冒泡阶段进行注册。
+stopPropagation():只会让当前时间处理程序运行，但事件不会在冒泡链上进一步扩大，因此不会有更多事件处理器被运行
+*3、JavaScript有一个热门方法是事件委托，即利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。它允许我们避免向特定节点添加事件侦听器，相反事件监听器被添加到一个父级，该事件监听器分析冒泡事件以查找子元素的匹配。
+eg：
+<ul id="parent-list">	
+	<li id="post-1">Item 1</li>	
+	<li id="post-2">Item 2</li>	
+	<li id="post-3">Item 3</li>	
+	<li id="post-4">Item 4</li>	
+	<li id="post-5">Item 5</li>	
+	<li id="post-6">Item 6</li>
+</ul>
+document.getElementById("parent-list").addEventListener("click", function(e) {	
+	// e.target is the clicked element!	
+	// If it was a list item	
+	if(e.target && e.target.nodeName == "LI") {		
+		// List item found!  Output the ID!		
+		console.log("List item ", e.target.id.replace("post-", ""), " was clicked!");	
+	}
+});
+// Get the parent DIV, add click listener...
+document.getElementById("myDiv").addEventListener("click",function(e) {	
+	// e.target was the clicked element  
+	if (e.target && e.target.matches("a.classA")) {    
+		console.log("Anchor element clicked!");	
+	}
+});
+4、javaScript动态修改css样式方法
+a.使用obj.className修改样式表的类名
+  eg:obj.style.backgroundColor="black";   eg:obj.setAttribute("class","style2");
+b.使用obj.classText修改嵌入式的css,可以采用累加的方法 
+ eg:obj.style.cssText+=';color:blue;'
+ eg:obj.style.cssText = "display:block;color:white;" (会清除以前的样式)
+C.使用更改外联的css文件、从而改变元素的css
+eg:obj.setAttribute("href","css2.css");
+5、IE事件处理程序：attachEvent()、detachEvent()
+Event.target不支持IE浏览器，应该用event.srcElement 
+6、访问dom的次数越多，引起浏览器重绘和重排的次数越多，延长整个页面的交互就绪事件，事件委托，将所有操作放到js程序里，与dom的操作只需要交互一次，提高性能。
+7、setTimeout()用于在指定的毫秒数后调用函数或计算表达式，只执行一次，单位是千分之一秒, millisecond。setInterval()方法会不停的调用函数。
+8、css sprite:将图标、背景、按钮背景等图片合并成一张图，然后通过坐标来定位背景。
+优点：a.很好地减少网页http请求，从而提高页面的性能 b.减少图片的大小、从而减少所在内存空间 c.易于风格更换  d.减少图片命名
+缺点：a.引入不必要的背景，并不是所有图片都是背景 b.开发麻烦，需要测量工具定位每个背景的坐标位置，较为繁琐  c.维护复杂，如果更改图片与原图片大小差别较大，需要调整其他背景图片的位置。
