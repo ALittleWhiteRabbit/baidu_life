@@ -38,6 +38,20 @@ function obj_Arr(obj) {
 
 console.log(obj_Arr(scoreObject));
 
+function objectConvertToArray(obj) {
+    var arr = [];
+    for(var prop in obj) {
+        var subarr = []; 
+        subarr.push(prop)
+        for(var x in obj[prop]) {
+            subarr.push(obj[prop][x]);
+        }
+        arr.push(subarr);
+    }  
+    return arr;        
+}
+console.log(objectConvertToArray(scoreObject));
+
 var menuArr = [
     [1, "Area1", -1],
     [2, "Area2", -1],
@@ -84,3 +98,30 @@ function arr_Obj(arr) {
 let mp = getMap(menuArr);
 
 console.log(arr_Obj(mp.get(-1), mp));
+
+function arrayConvertToObject(arr) {
+    var obj = {}; //顶一个空对象
+    var arrlen = arr.length;
+    //先把数数组的每一项转化为对象
+    for(var i = 0; i < arrlen; i++) {
+        var item = {
+            'name': arr[i][1]
+        }
+        obj[arr[i][0]] = item;
+    }
+    //单独创建循环来创建自submenu子对象
+    for(var i = arrlen -1 ; i >= 0; i--) {
+        if(obj.hasOwnProperty(arr[i][2])) {
+            obj[arr[i][2]]['subMenu'] = {};    
+        }
+    }
+    //把对象属于子对象的添加到对应的submenu中去
+    for(var i = arrlen -1 ; i >= 0; i--) {
+        if(obj.hasOwnProperty(arr[i][2])) {
+            obj[arr[i][2]]['subMenu'][arr[i][0]] =  obj[arr[i][0]]; 
+            delete  obj[arr[i][0]];    
+        }
+    }
+    return obj;        
+}
+console.log(arrayConvertToObject(menuArr));
