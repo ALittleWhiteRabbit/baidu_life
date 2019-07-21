@@ -35,9 +35,4 @@
 ## Day20~21：和页面对话（事件和dom）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day20_21)
 * [预览](https://cyxsf.github.io/baidu_life/Day20_21/index.html)
-## Day22~24：JavaScript里面的居民们（数据类型、对象、方法）
-* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day22_24)
-* [预览](https://cyxsf.github.io/baidu_life/Day20_21/index.html)
-## Day25~27：倒数开始（封装函数、Date）
-* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day25_27)
-* [预览](https://cyxsf.github.io/baidu_life/Day25_27/index.html)
+
