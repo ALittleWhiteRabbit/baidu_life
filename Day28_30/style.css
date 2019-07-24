@@ -1,0 +1,18 @@
+.email-sug {
+    margin: 0;
+    padding: 0;
+    width: 165px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.email-sug li {
+    margin-left : 15px;
+    list-style-type: none;
+}
+.email-sug li:hover {
+    background-color: #bfddec;
+    cursor: pointer;
+}
+.select {
+    background-color: #ffc4ce;
+}
