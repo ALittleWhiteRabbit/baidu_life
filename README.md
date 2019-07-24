@@ -41,4 +41,6 @@
 ## Day25~27：倒数开始（封装函数、Date）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day25_27)
 * [预览](https://cyxsf.github.io/baidu_life/Day25_27/index.html)
-
+## Day28~30：发个邮件（邮箱输入的提示功能）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day28_30)
+* [预览](https://cyxsf.github.io/baidu_life/Day28_30/index.html)
