@@ -44,3 +44,6 @@
 ## Day28~30：发个邮件（邮箱输入的提示功能）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day28_30)
 * [预览](https://cyxsf.github.io/baidu_life/Day28_30/index.html)
+## Day31~33：精明小卖家（MIS系统：表单、数据处理、表格）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day31_33)
+* [预览](https://cyxsf.github.io/baidu_life/Day31_33/index.html)
