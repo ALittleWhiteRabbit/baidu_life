@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<line x1="10" y1="10" x2="200" y2="10"
+style = "stroke:rgb(11,22,33);stroke-width:2"/>
+
+<rect width="100" height="100" x="50" y="50" rx="20" ry="20"
+style="fill:rgb(145, 153, 196);
+stroke:black;storke-width:5;opacity:0.8"/>
+
+<circle cx="100" cy="100" r="20"
+style="fill:rgb(245, 153, 196)"/>
+
+<text x="100" y="120"
+style="fill:red;font-size:16px;">SomeText</text>
+
+<defs>
+    <path id="MyPath"
+          d="M 100 200 
+             C 200 100 300   0 400 100
+             C 500 200 600 300 700 200
+             C 800 100 900 100 900 100" />
+  </defs>
+  <use xlink:href="#MyPath" fill="none" stroke="red"  />
+ <text x="200" y="30" font-size="20px">
+<textPath xlink:href="#MyPath">We go up, then we go down, then up again</textPath>
+</text>
+
+<path id="myPath"
+           d="M245 270 a1 1  0 0 1 15 -30
+              a1 1  0 0 1 30 -10
+              a1 1  0 0 1 20  20
+              a1 1  0 0 1 15  30
+              a1 1  0 0 1 -15  30
+              a1 1  0 0 1 -30  10
+              a1 1  0 0 1 -30  -10
+              a1 1  0 0 1 -20  -20
+              a1 1  0 0 1 15  -20"
+    style="fill:yellow;stroke:black;stoke-width:2"/>    
+<path d="M280 290 c 50 50 50 200 50 50" stroke="black" stroke-width="5" fill="none"></path>
+<circle cx="280" cy="280" r="35"
+style="fill: rgb(208, 53, 42);stroke:black;stroke-width:5"/>
+
+<path   d="M765 130 a1 1  0 0 1 15 -30
+              a1 1  0 0 1 30 -10
+              a1 1  0 0 1 20  20
+              a1 1  0 0 1 15  30
+              a1 1  0 0 1 -15  30
+              a1 1  0 0 1 -30  10
+              a1 1  0 0 1 -30  -10
+              a1 1  0 0 1 -20  -20
+              a1 1  0 0 1 15  -20"
+    style="fill:green;stroke:black;stoke-width:2"/>    
+<rect x="780" y="180" width="35" height="200"
+style="fill: rgb(208, 53, 42);stroke:black;stroke-width:1"/>
+
+</svg>
+
+
+
+
+
+
+
+

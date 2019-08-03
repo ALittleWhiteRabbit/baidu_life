@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<rect>标签可用来创建矩形以及矩形的变种，fill：填充颜色，stroke-width:边框宽度，
+stroke：边框颜色，fill-opacity:填充颜色透明度，stroke-opacity:笔触颜色透明度，
+rx和ry使矩形产生圆角
+-->
+<rect x="20" y="20" rx="20" ry="20" width="250"
+height="100" style="fill:red;stroke:black;
+stroke-width:5;opacity:0.5"/>
+
+<!--<circle>用来创建一个圆 cx和cy属性定义圆点的x和y坐标，r定义圆的半径-->
+<circle cx="100" cy="50" r="40" stroke="black"
+stroke-width="2" fill="red"/>
+
+<!--<ellipse>用来创建椭圆，rx和ry:分别定义水平半径和垂直半径-->
+<ellipse cx="300" cy="150" rx="200" ry="80"
+style="fill:rgb(200,100,50);
+stroke:rgb(0,0,100);stroke-width:2"/>
+
+<!--<line>用来创建线条，x1属性在x轴定义线条的开始，x2在结束，y1在y轴开始，y2在结束-->
+<line x1="0" y1="0" x2="300" y2="300"
+style="stroke:rgb(99,99,99);stroke-width:2"/>
+
+<!--<polygon>用来创建含有不少于三个边的图形 ，points：定义多边形每个角的x和y坐标-->
+<polygon points="220,100 300,210 170,250"
+style="fill:#cccccc;
+stroke:#000000;stroke-width:1"/>
+
+<!--<polyline>用来创建仅包含直线的形状-->
+<polyline points="0,0 0,20 20,20 20,40 40,40 40,60"
+style="fill:white;stroke:red;stroke-width:2"/>
+
+<!--<path>用来定义路径
+例子定义了一条路径，它开始于位置 250 150，到达位置 150 350，
+然后从那里开始到 350 350，最后在 250 150 关闭路径。-->
+<path d="M250 150 L150 350 L350 350 Z" />
+
+<!--高斯模糊（Gaussian Blur）
+必须在 <defs> 标签中定义 SVG 滤镜。
+<filter> 标签用来定义 SVG 滤镜。<filter> 标签使用必需的 id 属性来定义向图形应用哪个滤镜？
+<filter> 标签必须嵌套在 <defs> 标签内。<defs> 标签是 definitions 的缩写，
+它允许对诸如滤镜等特殊元素进行定义。-->
+<defs>
+<filter id="Gaussian_Blur">
+<feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+</filter>
+</defs>
+
+<ellipse cx="200" cy="150" rx="70" ry="40"
+style="fill:#ff0000;stroke:#000000;
+stroke-width:2;filter:url(#Gaussian_Blur)"/>
+
+<!--
+<linearGradient> 可用来定义 SVG 的线性渐变。
+<linearGradient> 标签必须嵌套在 <defs> 的内部。-->
+<!--水平渐变-->
+<defs>
+<linearGradient id="orange_red" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:rgb(255,255,0);
+stop-opacity:1"/>
+<stop offset="100%" style="stop-color:rgb(255,0,0);
+stop-opacity:1"/>
+</linearGradient>
+</defs>
+
+<ellipse cx="200" cy="250" rx="85" ry="55"
+style="fill:url(#orange_red)"/>
+
+<!--垂直渐变-->
+<defs>
+<linearGradient id="orange_red2" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" style="stop-color:rgb(255,255,0);
+stop-opacity:1"/>
+<stop offset="100%" style="stop-color:rgb(255,0,0);
+stop-opacity:1"/>
+</linearGradient>
+</defs>
+
+<ellipse cx="500" cy="190" rx="85" ry="55"
+style="fill:url(#orange_red2)"/>
+
+<!--<radialGradient> 用来定义放射性渐变。
+cx、cy 和 r 属性定义外圈，而 fx 和 fy 定义内圈 
+渐变的颜色范围可由两种或多种颜色组成。每种颜色通过一个 <stop> 标签来规定。
+offset 属性用来定义渐变的开始和结束位置-->
+<defs>
+<radialGradient id="grey_blue" cx="50%" cy="50%" r="50%"
+fx="50%" fy="50%">
+<stop offset="0%" style="stop-color:rgb(200,200,200);
+stop-opacity:0"/>
+<stop offset="100%" style="stop-color:rgb(0,0,255);
+stop-opacity:1"/>
+</radialGradient>
+</defs>
+
+<ellipse cx="230" cy="200" rx="110" ry="100"
+style="fill:url(#grey_blue)"/>
+
+</svg>
+

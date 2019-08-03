@@ -1,0 +1,13 @@
+table ,th,td {
+    border: 1px solid #000;
+}
+
+/*折叠边框*/
+table {
+    border-collapse: collapse; 
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}

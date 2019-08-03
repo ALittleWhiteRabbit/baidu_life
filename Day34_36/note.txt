@@ -1,0 +1,13 @@
+1、SVG是使用XML来描述二维图形和绘图程序的语言
+2、SVG指可伸缩矢量图形，是万维网联盟的标准，尺寸小，压缩性强，可在图像质量不下降的情况下被放大
+3、standalone = "no"意味着SVG文档会引用一个外部文件，xmlns属性可定义SVG命名空间。
+4、SVG文件可通过以下标签嵌入HTML文档：<embed>、<object>或<iframe>
+5、<rect>标签可用来创建矩形以及矩形的变种，fill：填充颜色，stroke-width:边框宽度，stroke：边框颜色，fill-opacity:填充颜色透明度，stroke-opacity:笔触颜色透明度，rx和ry使矩形产生圆角
+6、<circle>用来创建一个圆 cx和cy属性定义圆点的x和y坐标，r定义圆的半径
+7、<ellipse>用来创建椭圆，rx和ry:分别定义水平半径和垂直半径
+8、<line>用来创建线条，x1属性在x轴定义线条的开始，x2在结束，y1在y轴开始，y2在结束
+9、<polygon>用来创建含有不少于三个边的图形 ，points：定义多边形每个角的x和y坐标
+10、<polyline>用来创建仅包含直线的形状、<path>用来定义路径
+11、<filter> 标签用来定义 SVG 滤镜。<filter> 标签使用必需的 id 属性来定义向图形应用哪个滤镜？<filter> 标签必须嵌套在 <defs> 标签内。<defs> 标签是 definitions 的缩写，它允许对诸如滤镜等特殊元素进行定义。
+12、<canvas>只有两个属性：width和height，开始时没有为canvas规定样式规则时，其将会完全透明；<canvas>元素需要结束标签，
+13、<canvas> 元素有一个叫做 getContext() 的方法，这个方法是用来获得渲染上下文和它的绘画功能

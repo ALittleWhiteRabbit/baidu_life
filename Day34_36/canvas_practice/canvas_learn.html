@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>canvas</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script>
+            var canvas = document.getElementById("canvas");
+            if(canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+
+                ctx.fillRect(25,25,100,100); //fillRect(x, y, width, height)  绘制一个填充的矩形
+                ctx.clearRect(45, 45, 60, 60); //clearRect(x, y, width, height) 清除指定矩形区域，让清除部分完全透明。
+                ctx.strokeRect(50, 50, 50, 50); //strokeRect(x, y, width, height)  绘制一个矩形的边框
+
+                ctx.beginPath() //新建一条路径，生成之后，图形绘制命令被指向到路径上生成路径。
+                ctx.moveTo(175, 50); //将笔触移动到指定的坐标x以及y上。
+                ctx.lineTo(250, 75); //绘制一条从当前位置到指定x以及y位置的直线。
+                ctx.lineTo(250, 25);
+                ctx.fill();
+                //stroke()  通过线条来绘制图形轮廓。
+                //closePath()  闭合路径之后图形绘制命令又重新指向到上下文中。
+                /*当你调用fill()函数时，所有没有闭合的形状都会自动闭合，
+                所以你不需要调用closePath()函数。但是调用stroke()时不会自动闭合。
+                当前路径为空，即调用beginPath()之后，或者canvas刚建的时候
+                ，第一条路径构造命令通常被视为是moveTo（），无论实际上是什么。*/
+
+                /*arc(x, y, radius, startAngle, endAngle, anticlockwise)
+                画一个以（x,y）为圆心的以radius为半径的圆弧（圆），从startAngle开始到endAngle结束，
+                按照anticlockwise给定的方向（默认为顺时针）来生成。
+                arcTo(x1, y1, x2, y2, radius)根据给定的控制点和半径画一段圆弧，再以直线连接两个控制点*/
+
+                //使用二次贝塞尔曲线绘制对话框
+                ctx.beginPath();
+                ctx.moveTo(75,25);
+                ctx.quadraticCurveTo(25,25,25,62.5);
+                ctx.quadraticCurveTo(25,100,50,100);
+                ctx.quadraticCurveTo(50,120,30,125);
+                ctx.quadraticCurveTo(60,120,65,100);
+                ctx.quadraticCurveTo(125,100,125,62.5);
+                ctx.quadraticCurveTo(125,25,75,25);
+                ctx.stroke();
+
+                //使用三次贝塞尔曲线绘制心型
+                ctx.beginPath();
+                ctx.moveTo(75,40);
+                ctx.bezierCurveTo(75,37,70,25,50,25);
+                ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
+                ctx.bezierCurveTo(20,80,40,102,75,120);
+                ctx.bezierCurveTo(110,102,130,80,130,62.5);
+                ctx.bezierCurveTo(130,62.5,130,25,100,25);
+                ctx.bezierCurveTo(85,25,75,37,75,40);
+                ctx.fill();
+
+                /*贝塞尔曲线:
+                quadraticCurveTo(cp1x, cp1y, x, y)绘制二次贝塞尔曲线，cp1x,cp1y为一个控制点，x,y为结束点。
+                bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
+                绘制三次贝塞尔曲线，cp1x,cp1y为控制点一，cp2x,cp2y为控制点二，x,y为结束点*/
+
+                /*fillStyle = color 设置图形的填充颜色。
+                strokeStyle = color 设置图形轮廓的颜色。
+                globalAlpha = transparencyValue  这个属性影响到 canvas 里所有图形的透明度，
+                有效的值范围是 0.0 （完全透明）到 1.0（完全不透明），默认是 1.0。*/
+
+                /*渐变Gradients
+                createLinearGradient(x1, y1, x2, y2)
+                createLinearGradient 方法接受 4 个参数，表示渐变的起点 (x1,y1) 与终点 (x2,y2)。
+                createRadialGradient(x1, y1, r1, x2, y2, r2)
+
+                gradient.addColorStop(position, color)
+                addColorStop 方法接受 2 个参数，position 参数必须是一个 0.0 与 1.0 之间的数值，
+                表示渐变中颜色所在的相对位置。*/
+
+                /*fillText(text, x, y [, maxWidth])
+                在指定的(x,y)位置填充指定的文本，绘制的最大宽度是可选的.
+                measureText() 将返回一个 TextMetrics对象的宽度、所在像素，这些体现文本特性的属性*/
+
+                /*drawImage(image, x, y)
+                其中 image 是 image 或者 canvas 对象，x 和 y 是其在目标 canvas 里的起始坐标。*/
+
+                /*translate(x, y) 移动
+                translate 方法接受两个参数。x 是左右偏移量，y 是上下偏移量，如右图所示。
+                rotate(angle)  旋转
+                这个方法只接受一个参数：旋转的角度(angle)，它是顺时针方向的，以弧度为单位的值。
+                transform(m11, m12, m21, m22, dx, dy) 变形*/
+            }
+        </script>
+    </body>
+</html>
