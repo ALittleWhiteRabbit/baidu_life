@@ -50,4 +50,6 @@
 ## Day34~36：精明小卖家(二)（SVG、Canvas）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day34_36)
 * [预览](https://cyxsf.github.io/baidu_life/Day34_36/index.html)
-
+## Day37~38：精明小卖家(三)（localStorage）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day37_38)
+* [预览](https://cyxsf.github.io/baidu_life/Day37_38/index.html)
