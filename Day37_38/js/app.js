@@ -58,9 +58,16 @@ tableWrapper.onmouseover = function (e) {
                 data.push(list[i]);
             }
         }
-        draw(data);
 
-        target.style = "background:url(../Day37_38/icon.png) right center /15px 15px no-repeat";
+        if(target.id == "edit") {
+            target.style = "background:none";
+        }else {
+            draw(data);
+            if(target.innerHTML != region && target.innerHTML !=product) {
+                target.style = "background:url(../Day37_38/icon.png) right center /15px 15px no-repeat";
+            }
+        }
+        
     }
 }
 
@@ -78,38 +85,42 @@ tableWrapper.onmouseout = function (e) {
 }
 
 /*表格的点击事件,
-bug:点击输入框后，图表变为已选选项的图表，而不是该行的图表，
-同时所点击表格的右下角在鼠标移动时依旧会出现icon
+bug:点击输入框后，图表变为已选选项的图表，而不是该行的图表
 */
-
 tableWrapper.addEventListener('click',function(){
     var e = event || window.event;
     var target = e.target || e.srcElement;
+    var region = tr.getAttribute('region');
+    var product = tr.getAttribute('product');
+
     if(target.nodeName == "TD") {
-        addChild(target);
-        var save = document.getElementById("save");
-        save.onclick = function() {
-            saveEvent(target);
-        }
+        if(target.innerHTML != region && target.innerHTML !=product) {
+            addChild(target);
 
-        var cancel = document.getElementById("cancel");
-        cancel.onclick = function() {
-            reset();
-        }
-
-        //同一时刻，只有一个单元格处于编辑状态
-        var editTd = document.querySelector('#edit');
-        if (editTd !== null) {
-            var value = inputValue(editTd);
-            if (target.id == "") { // 存在正在编辑TD 点击到了别的TD
-                target.id = "edit";
-                editTd.id = "";
-                editTd.innerHTML = value;
-            } else if (target.id == "edit") { // 存在正在编辑TD 点击到该TD
-                target.id = "";
+            var save = document.getElementById("save");
+            save.onclick = function () {
+                saveEvent(target);
             }
-        } else if (editTd == null) { // 没有正在编辑的TD 点击到TD
-            target.id = "edit";            
+
+            var cancel = document.getElementById("cancel");
+            cancel.onclick = function () {
+                reset();
+            }
+
+            //同一时刻，只有一个单元格处于编辑状态
+            var editTd = document.querySelector('#edit');
+            if (editTd !== null) {
+                var value = inputValue(editTd);
+                if (target.id == "") { // 存在正在编辑TD 点击到了别的TD
+                    target.id = "edit";
+                    editTd.id = "";
+                    editTd.innerHTML = value;
+                } else if (target.id == "edit") { // 存在正在编辑TD 点击到该TD
+                    target.id = "";
+                }
+            } else if (editTd == null) { // 没有正在编辑的TD 点击到TD
+                target.id = "edit";
+            }
         }
 
     }
