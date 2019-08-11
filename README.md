@@ -53,3 +53,6 @@
 ## Day37~38：精明小卖家(三)（localStorage）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day37_38)
 * [预览](https://cyxsf.github.io/baidu_life/Day37_38/index.html)
+## Day39~41：精明小卖家(四)（hash、pushState）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day39_41)
+* [预览](https://cyxsf.github.io/baidu_life/Day39_41/index.html)
