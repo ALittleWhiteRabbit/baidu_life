@@ -1,0 +1,17 @@
+1、LocalStorage:Key-Value的简单键值对存储结构，较为常用，以字符串形式存储
+A.只读的LocalStorage属性允许访问一个Document源的对象Storage,存储的数据能在跨浏览器会话保留。
+B.存储在localStorage的数据可以长期保留，没有时间限制
+C.特定于页面的协议,
+D.myStorage = localStorage;可用于访问当前源的本地存储空间的Storage对象
+F.setItem 、getItem 、removeItem 、clear
+2、Cookie存储方式存储内容有限，只适合做简单信息存储，存取接口设计的极其反人类
+3、IndexDB可以存储结构对象，可构建key和index的索引方式查找，很多接口类似NodeJS的异步回调方式
+4、FileSystem API相当于操作本地文件的存储方式
+5、window.applicationCache对象是对浏览器的应用缓存的编程访问方式
+6、sessionStorage - 针对一个session的数据存储
+A.当页面被关闭时，存储在sessionStorage的数据会被清除
+7、HTML5中，不是由每个服务器请求传递的，只有在请求时使用数据
+8、Ajax可以实现页面的无刷新操作，但是会无法前进和后退；但是当执行Ajax操作的时候，往浏览器history中塞入一个地址，返回的时候通过URL或其他传参可以还原到Ajax之前的模样
+9、浏览器的前进与后退会触发window.onpopstate事件，通过绑定popstate事件，可以根据当前URL地址的查询内容让对应的菜单执行Ajax载入，实现Ajax的前进与后退效果。
+10、新URL必须和当前URL在同一个源下;否则，pushState() 
+将丢出异常。这个参数可选，如果它没有被特别标注，会被设置为文档的当前URL。
