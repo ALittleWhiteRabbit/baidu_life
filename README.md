@@ -56,6 +56,9 @@
 ## Day39~41：精明小卖家(四)（hash、pushState）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day39_41)
 * [预览](https://cyxsf.github.io/baidu_life/Day39_41/index.html)
-## Day42~43：开一家餐厅吧(四)（面向对象）
+## Day42~43：开一家餐厅吧(一)（面向对象）
 * [代码](https://github.com/cyxsf/baidu_life/blob/master/Day42_43)
 * [预览](https://cyxsf.github.io/baidu_life/Day42_43/index.html)
+## Day44~46：开一家餐厅吧(二) （单例模式）
+* [代码](https://github.com/cyxsf/baidu_life/blob/master/Day44_46)
+* [预览](https://cyxsf.github.io/baidu_life/Day46_46/index.html)
