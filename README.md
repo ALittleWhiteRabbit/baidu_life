@@ -1,8 +1,8 @@
 # 百度前端技术学院
 记录在百度前端技术学院学习的过程
-## [Day1:初识前端（笔记）](https://github.com/cyxsf/baidu_life/blob/master/Day1/note.txt)
-## [Day2：一个在线简历（HTML）](https://cyxsf.github.io/baidu_life/Day2/index.html)
-## [Day3:初步了解CSS（HTML+CSS）](https://cyxsf.github.io/baidu_life/Day3/index.html)
+## Day1:[初识前端（笔记）](https://github.com/cyxsf/baidu_life/blob/master/Day1/note.txt)
+## Day2:[一个在线简历（HTML）](https://cyxsf.github.io/baidu_life/Day2/index.html)
+## Day3:[初步了解CSS（HTML+CSS）](https://cyxsf.github.io/baidu_life/Day3/index.html)
 ## [Day4:背景边框列表链接和更复杂的选择器](https://cyxsf.github.io/baidu_life/Day4/index.html)
 ## [Day5、6: 三种简历（同一HTML，不同CSS）](https://cyxsf.github.io/baidu_life/Day5_6/resume.html)
 ## [Day7、8: 学习布局(布局练习和设计稿）](https://cyxsf.github.io/baidu_life/Day7_8/design.html)
