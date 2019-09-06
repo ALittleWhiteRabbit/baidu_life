@@ -6,7 +6,7 @@
 ## Day4：[背景边框列表链接和更复杂的选择器](https://cyxsf.github.io/baidu_life/Day4/index.html)
 ## Day5、6：[三种简历（同一HTML，不同CSS）](https://cyxsf.github.io/baidu_life/Day5_6/resume.html)
 ## Day7、8: [学习布局(布局练习和设计稿）](https://cyxsf.github.io/baidu_life/Day7_8/design.html)
-## Day9~11：[做一个漂亮的网站(将设计稿转化为网页)](https://cyxsf.github.io/baidu_life/Day9_11/design.html)
+## Day9~11：[做一个漂亮的网站(将设计稿转化为网页)]()
 ## Day12~15：[复杂页面实现(将设计稿转化为网页）](https://cyxsf.github.io/baidu_life/Day12_15/design.html)
 ## Day16：[初识JavaScript](https://cyxsf.github.io/baidu_life/Day16/index2.html)
 ## Day17~18：[如果可以重来（条件和循环）](https://cyxsf.github.io/baidu_life/Day17_18/index.html)
