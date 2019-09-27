@@ -26,6 +26,7 @@ let push = {
                 this.product += this.productSelect[i].getAttribute('data-text') +'&';
             }
         }
+        console.log(this.public);
         history.pushState('',null,this.public+'#'+ this.region.slice(0,-1)+'||'+this.product.slice(0,-1));
     },
     'getPush' : function () {
