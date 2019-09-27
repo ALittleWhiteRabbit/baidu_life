@@ -10,7 +10,7 @@ let push = {
     'setPush' : function () {
         var url = location.href;
         var index = url.indexOf('#');
-        this.public = this.url.slice(0,index);
+        this.public = this.url.slice(0,index+1);
         this.region = '';
         this.product = '';
         this.selectAll = document.querySelectorAll('input[checkbox-type=all]');
